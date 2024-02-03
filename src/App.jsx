@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import './App.css'
 import { Outlet, useNavigate } from 'react-router-dom'
+import { Button } from 'react-bootstrap'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -31,8 +31,8 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-      <button onClick={() => { navigate( "about") }}>About</button>
-      <button onClick={() => { navigate( "home") }}>Home</button>
+      <Button onClick={() => { navigate( "about") }} variant='primary'>About</Button>
+      <Button onClick={() => { navigate( "home" ) }} variant='success'>Home</Button>
       <Outlet/>
     </>
   )
