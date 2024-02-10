@@ -1,6 +1,6 @@
-import './app-layout.css'
 import { Header } from '../header/header'
 import { Outlet } from 'react-router-dom'
+import './app-layout.scss'
 
 export function AppLayout() {
     

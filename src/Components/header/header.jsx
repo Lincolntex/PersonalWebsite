@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom'
-import './header.css'
+import './header.scss'
 import Button from 'react-bootstrap/Button'
 
 export function Header () {
