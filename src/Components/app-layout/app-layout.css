@@ -2,7 +2,7 @@
     background-color: aquamarine;
     overflow: auto;
     width: 100vw;
-    height: 200vh;    
+    height: 100vh;    
 }
 
 .scroll-area {
@@ -21,12 +21,10 @@
     height: calc(100vh - 5rem - 5rem);
 }
 
-/* .app-footer {
-    background-color: blue;
+.app-footer {
     width: 100vw;
     min-height: 5rem;
-    padding: 5rem;
-} */
+}
 
 .sticky {
     position: fixed;

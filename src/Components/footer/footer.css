@@ -9,17 +9,7 @@
     gap: 1rem;
 }
 
-.email-link {
-    width: 5rem;
-    height: 5rem;
-}
-
-.github-link {
-    width: 5rem;
-    height: 5rem;
-}
-
-.linkedin-link {
+.icon-link {
     width: 5rem;
     height: 5rem;
 }
