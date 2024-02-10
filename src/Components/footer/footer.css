@@ -1,0 +1,25 @@
+
+.footer {
+    background-color: yellowgreen;
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+}
+
+.email-link {
+    width: 5rem;
+    height: 5rem;
+}
+
+.github-link {
+    width: 5rem;
+    height: 5rem;
+}
+
+.linkedin-link {
+    width: 5rem;
+    height: 5rem;
+}

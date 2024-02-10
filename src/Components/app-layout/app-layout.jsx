@@ -1,6 +1,7 @@
 import './app-layout.css'
 import { Header } from '../header/header'
 import { Outlet } from 'react-router-dom'
+import { Footer } from '../footer/footer'
 
 export function AppLayout() {
     
@@ -14,7 +15,7 @@ export function AppLayout() {
                     <Outlet/>
                 </div>
                 <div className='app-footer'>
-                    {/* TODO footer*/}
+                    <Footer/>
                 </div>
             </div>
             
