@@ -1,0 +1,28 @@
+.section {
+    padding: 1rem;
+}
+
+.heading {
+    padding: 1rem;
+}
+
+.content-area {
+    display: flex;
+    justify-content: space-around;
+}
+
+.right-content {
+    width: 50%;
+    padding: 1rem;
+    text-align: center;
+
+}
+
+.left-content {
+    min-width: 50%;
+    padding: 1rem;
+}
+
+.section-break {
+    border-style: solid;
+}
