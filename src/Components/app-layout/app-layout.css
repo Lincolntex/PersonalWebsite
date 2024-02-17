@@ -13,6 +13,7 @@
     background-color: teal;
     width: 100vw;
     height: 5rem;
+    z-index: 999;
 }
 
 .app-content {
