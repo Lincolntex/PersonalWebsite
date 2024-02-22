@@ -3,6 +3,7 @@ import { Card } from "../../Components/card/card"
 import { EDUCATION_CARD_DATA } from "../../Components/data/data"
 import { WORK_CARD_DATA } from "../../Components/data/data"
 import { PROJECT_CARD_DATA } from "../../Components/data/data"
+import { HomeHero } from "../../Components/homeHero/homeHero"
 
 export function Home() {
     function convertToCard(input) {
@@ -12,8 +13,10 @@ export function Home() {
                         footer={input.footer}
         />
     }
+
     return(
         <>
+            <HomeHero/>
             <Section title='Education' content={
                 EDUCATION_CARD_DATA.map (convertToCard)
             }/>
