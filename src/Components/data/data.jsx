@@ -27,6 +27,7 @@ export const WORK_CARD_DATA = [
         footer: "Start Date - End Date"
     }
 ]
+
 export const PROJECT_CARD_DATA = [
     { heading: "Name of Project", 
         subHeading: "Project Link", 
@@ -44,3 +45,4 @@ export const PROJECT_CARD_DATA = [
         footer: "Start Date - End Date"
     }
 ]
+
