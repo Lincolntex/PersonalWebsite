@@ -6,8 +6,10 @@
     padding-bottom: 2rem;
 }
 
-.section-break {
+.hero-break {
     border-style: solid;
+    border-width: thin;
+    border-color: #d2d2d2;
 }
 
 .desc {
