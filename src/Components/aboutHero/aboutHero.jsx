@@ -8,7 +8,7 @@ export function AboutHero () {
             </div>
             <h2 className='title'>Chasen Young</h2>
             <h4 className='desc'>Who is Chasen? Here are some hobbies and interests Chasen ejoys during his free time.</h4>
-            <div className='section-break'></div>
+            <div className='hero-break'></div>
 
         </div>
     )

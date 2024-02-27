@@ -8,7 +8,7 @@ export function HomeHero () {
             </div>
             <h2 className='title'>Chasen Young</h2>
             <h4 className='desc'>A graduate of the Univeristy of Nevada, Reno with a BS in Information Systems working toward a career in Web Development.</h4>
-            <div className='section-break'></div>
+            <div className='home-hero-break'></div>
 
         </div>
     )

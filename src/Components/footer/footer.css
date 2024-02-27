@@ -1,15 +1,17 @@
 
 .footer {
-    background-color: yellowgreen;
+    background-color: #e0e0e0;
     width: 100%;
-    height: 10rem;
+    height: 5rem;
+    padding-inline: 3rem;
     display: flex;
-    justify-content: space-around;
+    justify-content:flex-end;
     align-items: center;
     gap: 1rem;
 }
 
-.icon-link {
-    width: 5rem;
-    height: 5rem;
+.icon-link > img {
+    width: 2rem;
+    height: 2rem;
 }
+

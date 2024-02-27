@@ -8,7 +8,7 @@ export function Header () {
     return (
         <div className="header">
             <div className='header-left'>
-                <h1>Chasen</h1>
+                <h1>Chasen Young</h1>
             </div>
             <div className='header-right'>
                 <Button onClick={() => navigate ('home')}>Home</Button>
