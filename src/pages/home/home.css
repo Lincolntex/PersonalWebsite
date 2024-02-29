@@ -1,0 +1,5 @@
+.card-wrapper {
+    /*margin is outside the component, Padding is inside*/
+    margin: 1rem 1rem 1rem 1rem;
+}
+

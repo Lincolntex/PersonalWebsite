@@ -1,3 +1,4 @@
+import './home.css'
 import { Section } from "../../Components/section/section"
 import { Card } from "../../Components/card/card"
 import { EDUCATION_CARD_DATA } from "../../Components/data/data"
@@ -7,15 +8,20 @@ import { HomeHero } from "../../Components/homeHero/homeHero"
 
 export function Home() {
     function convertToCard(input) {
-        return <Card heading={input.heading}
+        return (
+        <div className="card-wrapper">
+            <Card heading={input.heading}
                         subTitle={input.subHeading}
                         content={input.content}
                         footer={input.footer}
-        />
+            />
+        </div>
+        )    
     }
 
     return(
         <>
+            
             <HomeHero/>
             <Section title='Education' content={
                 EDUCATION_CARD_DATA.map (convertToCard)

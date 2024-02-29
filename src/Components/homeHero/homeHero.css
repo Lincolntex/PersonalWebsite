@@ -12,11 +12,6 @@
     border-color: #d2d2d2;
 }
 
-.desc {
-    padding-bottom: 2rem;
-    margin-inline: 15rem;
-}
-
 .image-frame {
     padding: 2rem 0 1rem 0;
 }
@@ -24,4 +19,8 @@
 .image-frame > img {
     width: 256px;
     height: 256px;
+}
+
+.home-hero-desc {
+    margin: 2rem 5rem 2rem 5rem;
 }
