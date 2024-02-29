@@ -1,17 +1,19 @@
 import './card.css'
+import BSCard from 'react-bootstrap/Card';
 
 export function Card (props) {
     return (
-        <div className='card'>
-            <h3 className='card-heading'>{props.heading}</h3>
-            {props.subTitle && 
-                <h4 className='card-sub-heading'>{props.subTitle}</h4>
-            }
-            <p className='card-content'>{props.content}</p>
-            {props.footer && 
-                <p className='card-footer'>{props.footer}</p>
-            }
-
-        </div>
+        <BSCard>
+            <BSCard.Header>{props.heading}</BSCard.Header>
+            <BSCard.Body>
+                {props.subTitle && 
+                <BSCard.Title>{props.subTitle}</BSCard.Title>
+                }
+                <BSCard.Text>{props.content}</BSCard.Text>
+                {props.footer && 
+                <BSCard.Footer>{props.footer}</BSCard.Footer>
+                }
+            </BSCard.Body>
+        </BSCard>
     )
 }

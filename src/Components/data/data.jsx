@@ -50,7 +50,7 @@ export const ACTIVITY_CARD_DATA = [
     { heading: "Name of Activity",
         subHeading: null,
         content: "Desctiption of Activity, how long Ive been practicing and why I like it",
-        Footer: ""
+        footer: ""
     }
 ]
 
