@@ -1,4 +1,4 @@
-import './home.css'
+import '../../styles.css'
 import { Section } from "../../Components/section/section"
 import { Card } from "../../Components/card/card"
 import { EDUCATION_CARD_DATA } from "../../Components/data/data"
@@ -8,8 +8,11 @@ import { HomeHero } from "../../Components/homeHero/homeHero"
 
 export function Home() {
     function convertToCard(input) {
-        return (
-        <div className="card-wrapper">
+        return (    
+        <div className="section-row">
+            <div className="spacer-placeholder">
+
+            </div>
             <Card heading={input.heading}
                         subTitle={input.subHeading}
                         content={input.content}

@@ -5,10 +5,7 @@ export function Section(props) {
         <div className='section'>
             <h1 className='heading'>{props.title}</h1>
             <div className='content-area'>
-                <div className='left-content'></div>
-                <div className='right-content'>
-                    {props.content}
-                </div>
+                {props.content}
             </div>
             <div className='section-break'></div>
         </div>
