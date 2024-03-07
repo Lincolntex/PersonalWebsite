@@ -7,9 +7,9 @@ import { PROJECT_CARD_DATA } from "../../Components/data/data"
 import { HomeHero } from "../../Components/homeHero/homeHero"
 
 export function Home() {
-    function convertToCard(input) {
+    function convertToCard(input, id) {
         return (    
-        <div className="section-row">
+        <div className="section-row" key = {id}>
             <div className="spacer-placeholder">
 
             </div>
