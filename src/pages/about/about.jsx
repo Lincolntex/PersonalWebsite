@@ -6,9 +6,9 @@ import { ACTIVITY_CARD_DATA } from "../../Components/data/data"
 import { AboutHero } from "../../Components/aboutHero/aboutHero"
 
 export function About() {
-    function convertToCard(input) {
+    function convertToCard(input, id) {
         return (
-            <div className="section-row about-section-row">
+            <div className="section-row about-section-row" key={id}>
                 <img className='section-img' src={input.imgSrc}></img>
                 <Card heading={input.heading}
                     subTitle={input.subHeading}
