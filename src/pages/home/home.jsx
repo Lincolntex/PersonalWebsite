@@ -29,7 +29,7 @@ export function Home() {
             <Section title='Education' content={
                 EDUCATION_CARD_DATA.map (convertToCard)
             }/>
-            <Section title='Work Expirance' content={
+            <Section title='Work Experience' content={
                 WORK_CARD_DATA.map (convertToCard)
             }/>
             <Section title='Special Projects' content={
