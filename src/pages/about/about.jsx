@@ -3,6 +3,10 @@ import './about.css'
 import { Section } from "../../Components/section/section"
 import { Card } from "../../Components/card/card"
 import { ACTIVITY_CARD_DATA } from "../../Components/data/data"
+import { MUSIC_CARD_DATA } from "../../Components/data/data"
+import { OUTDOOR_CARD_DATA } from "../../Components/data/data"
+import { TECH_CARD_DATA } from "../../Components/data/data"
+import { TABLETOP_CARD_DATA } from "../../Components/data/data"
 import { AboutHero } from "../../Components/aboutHero/aboutHero"
 
 export function About() {
@@ -23,16 +27,16 @@ export function About() {
         <>
             <AboutHero/>
             <Section title='Play Music' content={
-                ACTIVITY_CARD_DATA.map (convertToCard)
+                MUSIC_CARD_DATA.map (convertToCard)
             }/>
             <Section title='Outdoor Adventures' content={
-                ACTIVITY_CARD_DATA.map (convertToCard)
+                OUTDOOR_CARD_DATA.map (convertToCard)
             }/>
             <Section title='Tech/Gaming' content={
-                ACTIVITY_CARD_DATA.map (convertToCard)
+                TECH_CARD_DATA.map (convertToCard)
             }/>
             <Section title='Tabletop Gaming' content={
-                ACTIVITY_CARD_DATA.map (convertToCard)
+                TABLETOP_CARD_DATA.map (convertToCard)
             }/>
         </>
     )
