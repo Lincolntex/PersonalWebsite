@@ -5,9 +5,22 @@
     height: 5rem;
     padding-inline: 3rem;
     display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icon-frame {
+    gap: 1rem;
+    display: flex;
     justify-content:flex-end;
     align-items: center;
     gap: 1rem;
+}
+
+.hash > p {
+    margin: 0;
+    color: #ccccccea;
 }
 
 .icon-link > img {
