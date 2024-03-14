@@ -11,6 +11,6 @@ export default defineConfig({
   define: {
     __COMMIT_HASH__: JSON.stringify(commitHash),
   },
-  base: 'https://lincolntex.github.io/personalwebsite',
+  base: '/personalwebsite/dist/',
   plugins: [react()],
 })
