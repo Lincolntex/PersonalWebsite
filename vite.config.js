@@ -11,6 +11,6 @@ export default defineConfig({
   define: {
     __COMMIT_HASH__: JSON.stringify(commitHash),
   },
-  base: '/personalwebsite/dist/',
+  base: '/PersonalWebsite/',
   plugins: [react()],
 })
