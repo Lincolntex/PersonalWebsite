@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "homepage": "http://lincolntex.github.io/personalwebsite",
+  "homepage": "http://lincolntex.github.io/PersonalWebsite",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
