@@ -8,12 +8,13 @@ import { OUTDOOR_CARD_DATA } from "../../Components/data/data"
 import { TECH_CARD_DATA } from "../../Components/data/data"
 import { TABLETOP_CARD_DATA } from "../../Components/data/data"
 import { AboutHero } from "../../Components/aboutHero/aboutHero"
+import { loadAsset } from '../../util/load-asset'
 
 export function About() {
     function convertToCard(input, id) {
         return (
             <div className="section-row about-section-row" key={id}>
-                <img className='section-img' src={input.imgSrc}></img>
+                <img className='section-img' src={loadAsset(input.imgSrc)}></img>
                 <Card heading={input.heading}
                     subTitle={input.subHeading}
                     content={input.content}
