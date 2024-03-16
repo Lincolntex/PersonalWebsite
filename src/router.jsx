@@ -4,12 +4,13 @@ import { About } from "./pages/about/about";
 import { Home } from "./pages/home/home";
 import { Blog } from "./pages/blog/blog"
 import App from "./App";
+import { BASE } from "./const";
 
 
 // define our router and export it from this file
 const router = createBrowserRouter([
     {
-      path: "/",
+      path: BASE,
       element: <App />,
       children: [
         {
