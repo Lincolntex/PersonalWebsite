@@ -11,3 +11,11 @@ Currently, two official plugins are available:
 - `npm run dev` to start app locally
 - `npm run build` to bundle app to be served 
 
+## Deployment pipeline
+- Github workflow to deploys after every merge to main
+    - Checkout code to action runner
+    - Set up and install Node.js on server
+    - Run NPM INstall
+    - Use npm run build
+    - uploads distributable(dist folder) 
+    - uses gh-pages to deploy to the live server
