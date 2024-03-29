@@ -1,0 +1,89 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Personal Website",
+    "dateExported": "2024-03-29T03:16:38.179Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "08e65816-640b-4ad5-a0ea-78fa0751eb0d",
+            "colId": "40d5fb38-3b3e-4fa5-bb02-00fa6cddf03b",
+            "containerId": "",
+            "name": "Get Blogs",
+            "url": "localhost:8080/blogs",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-03-29T02:18:04.294Z",
+            "modified": "2024-03-29T02:18:04.294Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "9bcdc957-473d-40ed-babb-434515693cc9",
+            "colId": "40d5fb38-3b3e-4fa5-bb02-00fa6cddf03b",
+            "containerId": "",
+            "name": "Get Blogs By ID",
+            "url": "localhost:8080/blogs/99b10e52-5604-4221-9c0a-161f3d9ad008",
+            "method": "GET",
+            "sortNum": 15000,
+            "created": "2024-03-29T02:26:24.451Z",
+            "modified": "2024-03-29T02:34:15.962Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "3e2719fe-8fbc-422b-9e7c-4ba24b5b75a2",
+            "colId": "40d5fb38-3b3e-4fa5-bb02-00fa6cddf03b",
+            "containerId": "",
+            "name": "Post Blogs",
+            "url": "localhost:8080/blogs",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-03-29T02:18:20.978Z",
+            "modified": "2024-03-29T02:24:00.923Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"My first Blog post\",\n  \"topic\": \"What does a blog post look like?\",\n  \"content\": \"This is what my first blog post looks like! Im so happy it worked!\",\n  \"author\": \"Chasen\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "fe37a11d-5ea2-4703-a98a-fc4775c4814a",
+            "colId": "40d5fb38-3b3e-4fa5-bb02-00fa6cddf03b",
+            "containerId": "",
+            "name": "PATCH Blogs",
+            "url": "localhost:8080/blogs",
+            "method": "PATCH",
+            "sortNum": 30000,
+            "created": "2024-03-29T02:58:52.361Z",
+            "modified": "2024-03-29T03:00:28.263Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": \"e5395af0-b093-44e3-ba66-5704543865db\",\n  \"title\": \"Update Test\",\n  \"topic\": \"Update Test\",\n  \"content\": \"Update Test\",\n  \"author\": \"Chasen\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "fae76c9c-66b8-4eac-ab18-3ab396fb75b5",
+            "colId": "40d5fb38-3b3e-4fa5-bb02-00fa6cddf03b",
+            "containerId": "",
+            "name": "Delete Blogs",
+            "url": "localhost:8080/blogs/e5395af0-b093-44e3-ba66-5704543865db",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-03-29T03:12:54.106Z",
+            "modified": "2024-03-29T03:14:59.431Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "personal-server",
+  "version": "1.0.0",
+  "description": "personal website server",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js"
+  },
+  "author": "lincolntex",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^4.26.2",
+    "postgres": "^3.4.4"
+  }
+}
