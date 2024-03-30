@@ -14,4 +14,12 @@ export default defineConfig({
   },
   base: BASE,
   plugins: [react()],
+  server: {
+    proxy: {
+      '/blogs': {
+        target: 'http://localhost:8080',
+        changeOrigin: true
+      }
+    }
+  }
 })
