@@ -1,4 +1,4 @@
-import { BlogsList } from "../../Components/blogs-list/blogs-list";
+import { BlogsList } from "../../Components/blogs/blogs-list";
 
 export function Blog() {
     return(
