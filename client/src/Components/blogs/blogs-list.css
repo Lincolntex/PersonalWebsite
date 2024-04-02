@@ -1,0 +1,19 @@
+/* Large screen */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    gap:1rem;
+
+    /* Medi screen */
+    @media (max-width: 950px ) {
+    grid-template-columns: 1fr 1fr;  
+    }
+
+    /* small screen */
+    @media (max-width: 650px ) {
+        grid-template-columns: 1fr;  
+        }
+
+}
