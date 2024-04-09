@@ -5,7 +5,7 @@ import { Home } from "./pages/home/home";
 import { Blog } from "./pages/blog/blog"
 import App from "./App";
 import { BASE } from "./const";
-import { BlogDetails } from "./pages/blog/blog-details";
+import { BlogDetailsPage } from "./pages/blog/blog-details-page";
 
 
 // define our router and export it from this file
@@ -30,7 +30,7 @@ const router = createBrowserRouter([
         {
           /*blogs/:uuid*/
           path: "blog/:uuid",
-          element: <BlogDetails/>
+          element: <BlogDetailsPage/>
         }
         
       ],

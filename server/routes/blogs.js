@@ -30,14 +30,14 @@ async function routes (fastify, options) {
 
     fastify.post('/blogs', async (request, reply) => {
         
-        // TODO: create a blog from teh request body
+        // TODO: create a blog from the request body
         const payload = {
             ...request.body,
             id: randomUUID(),
             created_date: new Date(Date.now()).toISOString(),
             last_updated: new Date(Date.now()).toISOString()
         }
-
+        console.log ('Chase', request.body)
         // wrap insert in database trasaction 
         await sql.begin(async (sql) => {
             await sql`
@@ -48,7 +48,7 @@ async function routes (fastify, options) {
 
         })
         
-        const blog = sql`
+        const blog = await sql`
             select * from blogs Where id = ${payload.id}
         `
 
@@ -72,7 +72,7 @@ async function routes (fastify, options) {
             `
         })
 
-        const blog = sql`
+        const blog = await sql`
             select * from blogs Where id = ${payload.id}
         `
 

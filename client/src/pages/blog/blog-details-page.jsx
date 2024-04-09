@@ -1,7 +1,8 @@
 import { useBlogById } from "../../hooks/useBlogById"
 import { useParams } from "react-router-dom"
+import { BlogDetails } from "../../Components/blogs/blog-details"
 
-export function BlogDetails() {
+export function BlogDetailsPage() {
     
     const params = useParams()
     const { response, error, isLoading } = useBlogById( params.uuid )
@@ -14,7 +15,9 @@ export function BlogDetails() {
         return <p>Fetching blog details... </p>
     }
 
+    console.log(response)
+
     return (
-        <p>{JSON.stringify(response)}</p>
+        <BlogDetails blog={response}/>
     )
 }

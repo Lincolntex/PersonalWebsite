@@ -13,7 +13,7 @@ export function useBlogById(id) {
                 const response = await fetch(`/blogs/${id}`);
                 try {
                     const json = await response.json();
-                    setApiResponse(json);
+                    setApiResponse(json[0]);
                 } catch (err) {
                     setApiError(new Error('Could not parse json response' + err))
                 } finally {
@@ -26,7 +26,7 @@ export function useBlogById(id) {
         }
 
         makeBlogsFetch()
-    }, [])
+    }, [id])
 
     
 
