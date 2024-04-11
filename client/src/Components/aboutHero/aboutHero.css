@@ -22,5 +22,9 @@
 }
 
 .about-hero-desc {
-    margin: 2rem 5rem 2rem 5rem;
+    margin: 2rem;
+
+    @media(max-width: 950px) {
+        margin: 1 rem;
+    }
 }

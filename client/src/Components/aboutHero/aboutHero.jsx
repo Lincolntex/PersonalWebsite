@@ -8,7 +8,7 @@ export function AboutHero () {
                 <img src={loadAsset("aboutHeroIMG")}></img>
             </div>
             <h2 className='title'>Chasen Young</h2>
-            <h4 className='about-hero-desc'>Who is Chasen? Here are some hobbies and interests Chasen ejoys during his free time.</h4>
+            <h4 className='about-hero-desc'>Who am I really? Here are some hobbies and interests I enjoy during my free time.</h4>
             <div className='hero-break'></div>
 
         </div>

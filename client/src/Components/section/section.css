@@ -3,7 +3,7 @@
 }
 
 .heading {
-    padding: 1rem;
+    text-align: center;
 }
 
 .content-area {
@@ -29,4 +29,5 @@
     border-style: solid;
     border-width: thin;
     border-color: #d2d2d2;
+    margin-top: 1rem;
 }

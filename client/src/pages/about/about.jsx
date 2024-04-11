@@ -25,7 +25,7 @@ export function About() {
     }
 
     return(
-        <>
+        <div className='about-container'>
             <AboutHero/>
             <Section title='Play Music' content={
                 MUSIC_CARD_DATA.map (convertToCard)
@@ -39,7 +39,7 @@ export function About() {
             <Section title='Tabletop Gaming' content={
                 TABLETOP_CARD_DATA.map (convertToCard)
             }/>
-        </>
+        </div>
     )
         
 }
