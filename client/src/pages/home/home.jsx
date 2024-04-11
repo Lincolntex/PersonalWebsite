@@ -1,4 +1,5 @@
 import '../../styles.css'
+import './home.css'
 import { Section } from "../../Components/section/section"
 import { Card } from "../../Components/card/card"
 import { EDUCATION_CARD_DATA } from "../../Components/data/data"
@@ -23,7 +24,7 @@ export function Home() {
     }
 
     return(
-        <>
+        <div className='home-container'>
             
             <HomeHero/>
             <Section title='Education' content={
@@ -35,7 +36,7 @@ export function Home() {
             <Section title='Special Projects' content={
                 PROJECT_CARD_DATA.map (convertToCard)
             }/>
-        </>
+        </div>
     )
         
 }

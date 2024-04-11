@@ -9,7 +9,7 @@ export function HomeHero () {
                 <img src={loadAsset("HomeHeroIMG")}></img>
             </div>
             <h2 className='title'>Chasen Young</h2>
-            <h4 className='home-hero-desc'>A graduate of the Univeristy of Nevada, Reno with a BS in Information Systems working toward a career in Web Development.</h4>
+            <h4 className='home-hero-desc'>A graduate of the Univeristy of Nevada, Reno with a Bachlors of Science in Information Systems working toward a career in Web Development.</h4>
             <div className='home-hero-break'></div>
 
         </div>

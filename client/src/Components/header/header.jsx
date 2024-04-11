@@ -13,7 +13,7 @@ export function Header () {
             <div className='header-right'>
                 <Button onClick={() => navigate ('home')}>Home</Button>
                 <Button onClick={() => navigate ('about')}>About</Button>
-                <Button onClick={() => navigate ('blog')}>Blog</Button>
+                <Button hidden onClick={() => navigate ('blog')}>Blog</Button>
             </div>
         </div>
     )

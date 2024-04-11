@@ -7,5 +7,22 @@
 }
 
 .about-section-row {
-    width: 80%;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.about-container {
+    margin-right: 20%;
+    margin-left: 20%;
+
+    @media(max-width: 1050px) {
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    @media(max-width: 650px) {
+        margin-right: 1%;
+        margin-left: 1%;
+    }
 }
