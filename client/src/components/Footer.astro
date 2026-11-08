@@ -10,7 +10,8 @@ const commitHash = import.meta.env.PUBLIC_COMMIT_HASH;
 
 const navLinks = [
   { label: "Home", href: withBase("/") },
-  { label: "About", href: withBase("/about/") },
+  { label: "About", href: withBase("/#about") },
+  { label: "Interests", href: withBase("/interests/") },
   ...(hasProjects ? [{ label: "Projects", href: withBase("/#projects") }] : []),
   ...(hasExperience
     ? [{ label: "Experience", href: withBase("/#experience") }]

@@ -8,7 +8,7 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
 
 const navLinks = [
   { label: "Home", href: withBase("/") },
-  { label: "About", href: withBase("/about/") },
+  { label: "About", href: withBase("/#about") },
   ...(hasProjects ? [{ label: "Projects", href: withBase("/#projects") }] : []),
   ...(hasExperience
     ? [{ label: "Experience", href: withBase("/#experience") }]

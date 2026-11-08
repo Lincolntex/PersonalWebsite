@@ -22,7 +22,7 @@ client/
 │   ├── content/blog/    # Markdown blog posts
 │   ├── data/            # Interests/hobby content
 │   ├── layouts/         # Shared page layout
-│   ├── pages/           # Home, About, Blog, 404
+│   ├── pages/           # Home, Interests, Blog, 404
 │   ├── styles/          # Tailwind entry point
 │   ├── config.ts        # Site content and metadata
 │   └── content.config.ts

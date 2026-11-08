@@ -5,7 +5,7 @@ export const siteConfig = {
     "Personal portfolio of Chasen Young, Information Systems graduate and IT specialist.",
   accentColor: "#1d4ed8",
   heroSummary:
-    "A graduate of the University of Nevada, Reno with a Bachelors of Science in Information Systems working toward a career in Web Development.",
+    "A graduate of the University of Nevada, Reno with a Bachelors of Science in Information Systems working toward a career in Information Technology and enterprise systems.",
   social: {
     email: "chasen.m.young@gmail.com",
     linkedin: "https://www.linkedin.com/in/chasen-young-13y7189/",
