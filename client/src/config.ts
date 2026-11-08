@@ -33,20 +33,20 @@ export const siteConfig = {
   ],
   projects: [
     {
-      name: "Sandy Valley Website",
-      description:
-        "I managed a small team tasked with building a website for my hometown, Sandy Valley. Our goal was to create a simple and easy to operate and maintain website to elevate the online presence of a rural Nevada community and create a simple way to disseminate information.",
-      link: "",
-      dateRange: "Aug 2023 - Dec 2023",
-      skills: ["HTML", "CSS", "JavaScript"],
-    },
-    {
       name: "UNR College of Business Advisor Bot",
       description:
         "I was the Product Owner of a small team tasked with creating a chatbot to help the College of Business advising department answer student questions about their major checklist and reduce the volume of appointments being scheduled with the advising team.",
       link: "https://www.unr.edu",
       dateRange: "Aug 2023 - Dec 2023",
       skills: ["React", "C#", "SQL"],
+    },
+    {
+      name: "Sandy Valley Website",
+      description:
+        "I managed a small team tasked with building a website for my hometown, Sandy Valley. Our goal was to create a simple and easy to operate and maintain website to elevate the online presence of a rural Nevada community and create a simple way to disseminate information.",
+      link: "",
+      dateRange: "Aug 2023 - Dec 2023",
+      skills: ["HTML", "CSS", "JavaScript"],
     },
   ],
   experience: [
@@ -123,9 +123,8 @@ export const siteConfig = {
       ],
     },
     {
-      school: "",
-      degree:
-        "In Progress: Cisco Certified Network Associate (CCNA) Certificate",
+      school: "Cisco Certified Network Associate (CCNA) Certificate",
+      degree: "In Progress",
       dateRange: "Current - Spring 2027",
       achievements: [
         {
