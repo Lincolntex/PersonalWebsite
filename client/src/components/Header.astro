@@ -1,0 +1,151 @@
+---
+import { siteConfig } from "../config";
+import { withBase } from "../utils/with-base";
+
+const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
+const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
+const hasEducation = siteConfig.education && siteConfig.education.length > 0;
+
+const navLinks = [
+  { label: "Home", href: withBase("/") },
+  { label: "About", href: withBase("/#about") },
+  ...(hasProjects ? [{ label: "Projects", href: withBase("/#projects") }] : []),
+  ...(hasExperience
+    ? [{ label: "Experience", href: withBase("/#experience") }]
+    : []),
+  ...(hasEducation
+    ? [{ label: "Education", href: withBase("/#education") }]
+    : []),
+  { label: "Blog", href: withBase("/blog/") },
+];
+---
+
+<header
+  id="header"
+  class="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
+>
+  <nav
+    class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-8 md:justify-center"
+  >
+    <a
+      href={withBase("/")}
+      class="text-lg font-bold text-gray-900 md:hidden"
+    >
+      {siteConfig.name}
+    </a>
+
+    <ul class="hidden items-center justify-center gap-8 md:flex">
+      {
+        navLinks.map((link) => (
+          <li>
+            <a
+              href={link.href}
+              class="font-medium text-gray-700 transition-colors hover:text-black"
+            >
+              {link.label}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+
+    <button
+      id="menu-toggle"
+      type="button"
+      aria-label="Toggle navigation menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+      class="flex h-10 w-10 items-center justify-center rounded-md text-gray-800 hover:bg-gray-100 md:hidden"
+    >
+      <svg
+        id="menu-open-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M4 6l16 0"></path>
+        <path d="M4 12l16 0"></path>
+        <path d="M4 18l16 0"></path>
+      </svg>
+      <svg
+        id="menu-close-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="hidden"
+      >
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M18 6l-12 12"></path>
+        <path d="M6 6l12 12"></path>
+      </svg>
+    </button>
+  </nav>
+
+  <div id="mobile-menu" class="hidden border-t border-gray-200 bg-white/95 backdrop-blur-sm md:hidden">
+    <ul class="mx-auto flex max-w-7xl flex-col gap-1 px-4 py-4 sm:px-8">
+      {
+        navLinks.map((link) => (
+          <li>
+            <a
+              href={link.href}
+              class="block rounded-md px-3 py-2 font-medium text-gray-700 transition-colors hover:bg-gray-100 hover:text-black"
+            >
+              {link.label}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</header>
+
+<script>
+  const header = document.getElementById("header");
+  const toggle = document.getElementById("menu-toggle");
+  const menu = document.getElementById("mobile-menu");
+  const openIcon = document.getElementById("menu-open-icon");
+  const closeIcon = document.getElementById("menu-close-icon");
+
+  const setMenuOpen = (open: boolean) => {
+    if (!menu || !toggle || !openIcon || !closeIcon) return;
+    menu.classList.toggle("hidden", !open);
+    openIcon.classList.toggle("hidden", open);
+    closeIcon.classList.toggle("hidden", !open);
+    toggle.setAttribute("aria-expanded", String(open));
+    header?.classList.toggle("bg-white/80", open);
+    header?.classList.toggle("backdrop-blur-sm", open);
+    updateHeaderBackground();
+  };
+
+  toggle?.addEventListener("click", () => {
+    const isOpen = toggle.getAttribute("aria-expanded") === "true";
+    setMenuOpen(!isOpen);
+  });
+
+  menu?.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => setMenuOpen(false));
+  });
+
+  const updateHeaderBackground = () => {
+    const scrolled = window.scrollY > 100;
+    const menuOpen = toggle?.getAttribute("aria-expanded") === "true";
+    header?.classList.toggle("bg-white/80", scrolled || Boolean(menuOpen));
+    header?.classList.toggle("backdrop-blur-sm", scrolled || Boolean(menuOpen));
+  };
+
+  window.addEventListener("scroll", updateHeaderBackground);
+  updateHeaderBackground();
+</script>
