@@ -13,8 +13,24 @@ export const siteConfig = {
     twitter: "",
   },
   aboutMe:
+    "Here are the skills I have picked up and honed over my professional career. If you'd like to get to know me on a more personal level, click the link below for more information about my Interests and Hobbies.",
+  interestsIntro:
     "Who am I really? Here are some hobbies and interests I enjoy during my free time.",
-  skills: ["JavaScript", "React", "HTML", "CSS", "C#", "SQL", "Git"],
+  skills: [
+    "OSI & TCP/IP Networking",
+    "Network & Infrastructure Troubleshooting",
+    "Observability (Grafana, Loki)",
+    "C#",
+    "SQL",
+    "React.js (HTML, CSS, JavaScript)",
+    "API & Log Analysis",
+    "Linux/System Operations",
+    "CRM Ticket Handling",
+    "Security & PII Compliance",
+    "Git Flow",
+    "Time Management",
+    "Agentic Development and task automation",
+  ],
   projects: [
     {
       name: "Sandy Valley Website",
@@ -35,40 +51,58 @@ export const siteConfig = {
   ],
   experience: [
     {
-      company: "Clear Capital",
-      title: "Customer Service Rep 1",
-      dateRange: "Jan 2022 - Current",
+      company: "Marigold - Zeta",
+      title: "Select Support Engineer",
+      location: "Shingle Springs, CA",
+      dateRange: "Sept 2024 - Current",
       bullets: [
-        "Gained experience working with complex reporting software like Jaspersoft.",
-        "Honed soft skills and attention to detail while supporting customers.",
+        "Provided elite, dedicated support to high-value enterprise accounts with subscriber databases of 1M+ contacts while leveraging Grafana and Loki for infrastructure monitoring and log analysis, maintaining a 99% Customer Satisfaction rating.",
+        "Owned technical support operations for the US market, serving as the primary regional support rep for the platform managing all incoming technical support queues.",
+        "Provided technical insight and solutions to client business requirements on a daily basis by partnering with customer support, account management, and technical teams.",
+      ],
+    },
+    {
+      company: "Clear Capital",
+      title: "Customer Support Representative",
+      location: "Reno, NV",
+      dateRange: "January 2022 - May 2024",
+      bullets: [
+        "Managed inspection scheduling and resolved availability conflicts.",
+        "Enforced strict data compliance governing confidential appraisal and valuation data.",
+        "Debugged portal issues to eliminate ingestion blockers and prevent technical delays.",
       ],
     },
     {
       company: "Chime",
-      title: "Member Support Rep",
-      dateRange: "Feb 2021 - Nov 2021",
+      title: "Member Support Representative",
+      location: "Reno, NV",
+      dateRange: "February 2021 - November 2021",
       bullets: [
-        "Gained first-hand experience working with finances and accounting.",
-        "Honed ticket handling and CRM software skills.",
-        "Picked up time management skills while demonstrating proper care and handling of customer and company sensitive information.",
+        "Investigated and resolved account transaction issues using Zendesk CRM software.",
+        "Analyzed and reconciled complex payment transaction discrepancies.",
+        "Maintained a high level of confidentiality regarding member accounts and financial information.",
       ],
     },
     {
-      company: "Tesla",
-      title: "Production Associate",
-      dateRange: "March 2018 - March 2019",
+      company: "8X8",
+      title: "Technical Support Specialist",
+      location: "Reno, NV",
+      dateRange: "March 2019 - March 2020",
       bullets: [
-        "Learned how to troubleshoot and fix production line equipment on the fly.",
-        "Gained experience working with deadlines and quotas.",
+        "Diagnosed and resolved complex VoIP system failures and IVR routing errors, maintaining service uptime for enterprise clients.",
+        "Applied deep knowledge of the OSI model and TCP/IP protocol stack to perform low-level network communications troubleshooting, diagnose packet-level issues, and resolve connectivity bottlenecks.",
+        "Managed passwords, permissions, and security settings for end-users.",
       ],
     },
     {
       company: "Army National Guard",
       title: "Heavy Equipment Operator",
-      dateRange: "Feb 2011 - Feb 2019",
+      location: "Las Vegas, NV",
+      dateRange: "February 2011 - February 2019",
       bullets: [
-        "Gained the ability to keep a level head in stressful situations.",
-        "Learned how to function effectively in a team environment while honing discipline and learning how to take initiative.",
+        "Oversaw several job sites, both foreign and domestic, utilizing heavy equipment.",
+        "Demonstrated sound judgment and initiative while working without supervision.",
+        "Honed ability to keep a level head and communicate effectively in stressful situations.",
       ],
     },
   ],
@@ -78,8 +112,30 @@ export const siteConfig = {
       degree: "Bachelors of Science in Information Systems",
       dateRange: "Aug 2020 - May 2024",
       achievements: [
-        "Became experienced with computer and tech repair and troubleshooting.",
-        "Obtained an entry-level understanding of HTML, CSS, JavaScript, C#, and SQL while familiarizing myself with the React framework.",
+        {
+          text: "Became experienced with computer and tech repair and troubleshooting.",
+          href: "",
+        },
+        {
+          text: "Obtained an entry-level understanding of HTML, CSS, JavaScript, C#, and SQL while familiarizing myself with the React framework.",
+          href: "",
+        },
+      ],
+    },
+    {
+      school: "",
+      degree:
+        "In Progress: Cisco Certified Network Associate (CCNA) Certificate",
+      dateRange: "Current - Spring 2027",
+      achievements: [
+        {
+          text: "Currently 1/4 of the way through a Udemy CCNA course on track for Completion by March of 2027.",
+          href: "",
+        },
+        {
+          text: "Udemy CCNA Course",
+          href: "https://www.udemy.com/course/ccna-complete",
+        },
       ],
     },
   ],

@@ -45,6 +45,9 @@ const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
                           style={`color: ${siteConfig.accentColor}`}
                         >
                           {exp.company}
+                          {exp.location && (
+                            <span class="text-gray-500"> · {exp.location}</span>
+                          )}
                         </p>
                       </div>
                       <span class="text-xs sm:text-sm text-gray-500 mt-2 sm:mt-0">
