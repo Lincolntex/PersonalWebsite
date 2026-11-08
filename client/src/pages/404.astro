@@ -1,0 +1,26 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { withBase } from "../utils/with-base";
+---
+
+<BaseLayout title="Page not found | Chasen Young">
+  <section
+    class="flex min-h-screen flex-col items-center justify-center px-6 py-24 text-center"
+  >
+    <p class="text-sm font-medium uppercase tracking-widest text-gray-500">
+      404
+    </p>
+    <h1 class="mt-4 text-4xl font-bold text-gray-900 sm:text-5xl">
+      Page not found
+    </h1>
+    <p class="mt-4 max-w-md text-gray-600">
+      Sorry, the page you are looking for does not exist or has moved.
+    </p>
+    <a
+      href={withBase("/")}
+      class="mt-8 rounded-lg bg-gray-900 px-6 py-3 font-medium text-white transition-colors hover:bg-gray-700"
+    >
+      Back to home
+    </a>
+  </section>
+</BaseLayout>
