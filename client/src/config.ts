@@ -123,8 +123,8 @@ export const siteConfig = {
       ],
     },
     {
-      school: "Cisco Certified Network Associate (CCNA) Certificate",
-      degree: "In Progress",
+      school: "In Progress",
+      degree: "Cisco Certified Network Associate (CCNA) Certificate",
       dateRange: "Current - Spring 2027",
       achievements: [
         {
